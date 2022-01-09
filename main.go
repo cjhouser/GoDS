@@ -18,6 +18,10 @@ func main() {
 	fmt.Printf("Non-Generic Sums: %v and %v\n",
 		SumInts(ints),
 		SumFloats(floats))
+
+    fmt.Printf("Generic Sums: %v and %v\n",
+        SumIntsOrFloats[string, int64](ints),
+        SumIntsOrFloats[string, float64](floats))
 }
 
 // SumInts adds together the values of m.
